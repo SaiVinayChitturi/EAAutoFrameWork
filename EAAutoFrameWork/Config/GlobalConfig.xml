@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EAAutoFrameWork>
+  <RunSettings>
+  <AUT>http://eaapp.somee.com/</AUT>
+  <Browser>Chrome</Browser>
+  <TestType>SmokeTest</TestType>
+  <IsLog>Y</IsLog>
+  <LogPath>D:\Automation Framework Design\Logfiles\</LogPath>
+    <ApplicationDB></ApplicationDB>
+  </RunSettings>
+</EAAutoFrameWork>
