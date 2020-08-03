@@ -12,9 +12,10 @@ namespace EAEmployeeTest.Pages
 {
     class LoginPage : BasePage
     {
-       
-        [FindsBy(How=How.Id, Using = "loginLink")]
-         IWebElement lnkLogin { get; set; }
+
+        public IWebElement lnklogin1 => DriverContext.Driver.FindElement(By.Id("loginLink"));
+        [FindsBy(How = How.Id, Using = "loginLink")]
+        IWebElement lnkLogin { get; set; }
 
         [FindsBy(How = How.Id, Using = "UserName")]
          IWebElement txtUserName { get; set; }

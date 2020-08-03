@@ -1,4 +1,7 @@
-﻿using EAAutoFrameWork.Base;
+﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports.Gherkin.Model;
+using AventStack.ExtentReports.Reporter;
+using EAAutoFrameWork.Base;
 using EAEmployeeTest.Pages;
 using System;
 using System.Collections.Generic;
@@ -24,9 +27,16 @@ namespace EAEmployeeTest.StepDefinitions
         [Given(@"I have navigated to the application")]
         public void GivenIHaveNavigatedToTheApplication()
         {
+           
             NavigateToSite();
             CurrentPage = GetInstance<HomePage>();
         }
+
+        //public virtual void NavigateToSite()
+        //{
+        //    DriverContext.Browser.GoToUrl(Settings.AUT);
+        //    LogHelpers.Write("Initialized Framework");
+        //}
 
         [Given(@"I see the application Opened")]
         public void GivenISeeTheApplicationOpened()
